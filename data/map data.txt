@@ -1,0 +1,79 @@
+system Lesath
+	pos -516 485
+	government Republic
+	attributes "south"
+	belt 1865
+	link Atria
+	link Dschubba
+	link Girtab
+	link Rastaban
+	link Sargas
+	link Shaula
+	asteroids "medium rock" 9 4.8384
+	asteroids "large rock" 21 7.2
+	asteroids "medium metal" 8 4.3776
+	asteroids "large metal" 1 5.4144
+	minables silicon 3 10.2616
+	minables titanium 2 10.8766
+	trade Clothing 285
+	trade Electronics 759
+	trade Equipment 540
+	trade Food 190
+	trade "Heavy Metals" 1011
+	trade Industrial 629
+	trade "Luxury Goods" 1070
+	trade Medical 797
+	trade Metal 495
+	trade Plastic 271
+	fleet "Small Southern Merchants" 1000
+	fleet "Large Southern Merchants" 2000
+	fleet "Small Southern Pirates" 2000
+	fleet "Large Southern Pirates" 4000
+	fleet "Small Militia" 5000
+	fleet "Derelict Southern" 30000
+	object
+		sprite star/f5
+	object "Scorpion"
+		sprite planet/rock4
+		distance 366.61
+		object
+			sprite planet/rhea
+			distance 189
+	object
+		sprite planet/venus
+		distance 780.86
+	object
+		sprite planet/ocean1-b
+		distance 1069.07
+	object
+		sprite planet/desert6-b
+		distance 1577.48
+		object
+			sprite planet/oberon
+			distance 158
+	object
+		sprite planet/dust0
+		distance 2628.29
+
+planet Earth
+	attributes education factory "near earth" research tourism urban
+	landscape land/city20
+	description `The ancestral home world of humanity, Earth has a population twice that of any other inhabited planet. Sprawling cities cover large portions of its surface, many of them overcrowded and dangerous. Some people work to scrape together enough money to leave, while at the same time others, born on distant worlds, make a pilgrimage of sorts to see this planet that once cradled the entirety of the human species.`
+		to display
+			not "start: syndicate"
+	description `The ancestral home world of humanity, as well as your own birthplace, Earth has a population twice that of any other planet. Sprawling cities cover its surface, many of them overcrowded and dangerous. Some people work to scrape together enough money to leave, while others, born on distant worlds, make a pilgrimage of sorts to see this planet that once cradled the entirety of the human species.`
+		to display
+			has "start: syndicate"
+	description `	Earth is also the capital of the Republic. Representative government becomes complicated when one planet has a greater population than a hundred planets elsewhere. As a result, smaller settlements are grouped together into planetary districts that elect a single representative between them - a source of much frustration in the frontier worlds.`
+	spaceport `Earth's spaceport is a series of massive buildings; the gaps between them form narrow concrete canyons a hundred stories deep. From a distance it has the appearance of a bustling termite mound.`
+	spaceport `	Inside the towers is a warren of dim hallways and dingy shops. Hitchhikers sleep in the corners of unused docking bays under old army blankets, a few uniformed cleaners try to keep the litter and dust in check, and rich tourists from other stars cling tightly to their expensive cameras.`
+	outfitter "Common Outfits"
+	outfitter "Lovelace Basics"
+	outfitter "Syndicate Basics"
+	outfitter "Ammo North"
+	"required reputation" 2
+	bribe 0.03
+	security 0.3
+	tribute 10000
+		threshold 20000
+		fleet "Large Republic" 50
