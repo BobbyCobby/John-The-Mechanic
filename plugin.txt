@@ -1,2 +1,6 @@
 name "John the Mechanic"
 about "Plugin for Endless Sky that adds a reformed pirate mechanic, who is willing to modify your ships in ways that probably void the warranty."
+version "v0.0.0; no releases yet!"
+authors "BobbyCobby"
+dependencies
+    "game version" "0.11.2"
