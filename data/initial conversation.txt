@@ -35,9 +35,9 @@ mission "Meet John"
 				`	"Yes."`
 				`	"No."`
 			`	"Well, that was his ship," he says. "He'd take me out on raids and strap me to the front of the bridge, so I couldn't hide in the cargo hold. Eventually he put me in command of a Fury, and the first chance I got I ran away. About two minutes later I ran into a bounty hunter, and the scram drive button was jammed," he laughs in spite of himself.`
-			`	"I broke the pirate code and asked for mercy; this guy had seven interceptors. He was kind; he heard me out, and he dropped me here under a vow of peace."
+			`	"I broke the pirate code and asked for mercy; this guy had seven interceptors. He was kind; he heard me out, and he dropped me here under a vow of peace."`
 			choice
-				`	"Then what happened?"
+				`	"Then what happened?"`
 				`	"Can you wrap this up? I'm not here for stories."`
 				goto brief
 			`	"Well, I couldn't exactly just get a job," he laughs. Seeing your puzzled look, his smile fades. "Folk around here aren't all as open-minded as you are, <first>.`
@@ -49,7 +49,7 @@ mission "Meet John"
 			label abilities
 			choice
 				`	"Cool, what can you do?"`
-				`	"No thanks."
+				`	"No thanks."`
 				goto reject
 			`	He grins. "Anything and everything. Extra gun port? More armor? Cargo bay dangling precariously over the hyperdrive? John's your man."`
 			choice
