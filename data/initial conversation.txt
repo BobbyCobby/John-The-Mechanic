@@ -51,13 +51,24 @@ mission "Meet John"
 				`	"Cool, what can you do?"`
 				`	"No thanks."`
 					goto reject
-			`	He grins. "Anything and everything. Extra gun port? More armor? Cargo bay dangling precariously over the hyperdrive? John's your man."`
+			`	He grins. "Anything and everything. More armor? Cargo bay dangling precariously over the hyperdrive? John's your man."`
 			choice
 				`	"That's exactly what I need, thanks a million."`
 					goto end
 				`	"Is that... safe?"`
-			`	"It's perfectly legal, and as long as you aren't an idiot, you won't do any real harm. But I can't promise anything," he warns you. "There's a reason most Sparrows don't come with a dozen gun ports."`
+				`	"What about gun ports and turret mounts?"`
+					goto ports
+			`	"It's perfectly legal, and as long as you aren't an idiot, you won't do any real harm. But I can't promise anything," he warns you. "There's a reason most Sparrows don't come with a dozen brigs and way too much armor."`
 			`	You grimace but nod your understanding. "Thanks for the offer," you say.`
+				goto end
+			label ports
+				`	"Unfortunately, no," he frowns. "The firing software is hardcoded into the chips on most ships, and there aren't enough credits in the world to make me break into a <model>'s motherboard."`
+			choice
+				`	"Why? Is it illegal?"`
+				`	"Thanks! I'd better be going."`
+					goto end
+			`	"Oh yeah. I'd have half the galaxy chasing me; that stuff's heavily patented. And it's a great way to get yourself electrocuted anyway."`
+			`	"Thanks anyway."`
 			label end
 			`	"No problem!" he cries. "See you around. I rent a space in the outfitter; stop by later if you're still interested."`
 			`	He walks away, whistling a tune from an old Earth pirate movie.`
