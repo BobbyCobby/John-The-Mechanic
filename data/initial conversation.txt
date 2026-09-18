@@ -72,9 +72,9 @@ mission "Meet John"
 			label end
 			`	"No problem!" he cries. "See you around. I rent a space in the outfitter; stop by later if you're still interested."`
 			`	He walks away, whistling a tune from an old Earth pirate movie.`
-				action
-					event "John Outfitter"
-				decline
+			action
+				event "John Outfitter"
+			decline
 			label reject
 			`	He looks crestfallen and walks away.`
 			`	(If you don't accept John's help, the John The Mechanic plugin won't do anything. Try reloading your save and landing again.)`
