@@ -8,9 +8,9 @@ mission "Meet John"
 			`	He sees you and walks over. "Well, Captain <last>! It's a pleasure to meet you. Beautiful <model> you've got there," he adds.`
 			choice
 				`	"Nice to meet you too."`
-				goto greeting
+					goto greeting
 				`	"Who are you?"`
-				goto greeting
+					goto greeting
 				`	"How do you know my name?"`
 			branch famous
 				"combat rating" > 3000
@@ -24,11 +24,11 @@ mission "Meet John"
 			choice
 				`	"What happened?"`
 				`	"Fine, just tell me what you can do for me."`
-				goto brief
+					goto brief
 				`	"I want nothing to do with you."`
-				goto reject
+					goto reject
 				`	"Pirates on a Republic planet? Get me outta here!"`
-				goto flee
+					goto flee
 			`	He sighs. "Long story. I was born on Greenrock, and raised to be a pirate. You know," he says. "Smugglers coming 'round for dinner, a wanted criminal looking for passage every other day. I can tell you it's not for the faint-hearted, and I was only a repairman."`
 			`	"But I didn't really have a choice. My dad was a famous Bastion pilot. Ever heard of the Blackbeard's Spite?"`
 			choice
@@ -39,7 +39,7 @@ mission "Meet John"
 			choice
 				`	"Then what happened?"`
 				`	"Can you wrap this up? I'm not here for stories."`
-				goto brief
+					goto brief
 			`	"Well, I couldn't exactly just get a job," he laughs. Seeing your puzzled look, his smile fades. "Folk around here aren't all as open-minded as you are, <first>.`
 			`	"So, I turned to the only thing I know how to do, which is fixing ships. And modifying them, of course," he laughs. "I've been doing that ever since. I can improve the <ship> beyond recognition, if you like," he offers.`
 			goto abilities
@@ -50,11 +50,11 @@ mission "Meet John"
 			choice
 				`	"Cool, what can you do?"`
 				`	"No thanks."`
-				goto reject
+					goto reject
 			`	He grins. "Anything and everything. Extra gun port? More armor? Cargo bay dangling precariously over the hyperdrive? John's your man."`
 			choice
 				`	"That's exactly what I need, thanks a million."`
-				goto end
+					goto end
 				`	"Is that... safe?"`
 			`	"It's perfectly legal, and as long as you aren't an idiot, you won't do any real harm. But I can't promise anything," he warns you. "There's a reason most Sparrows don't come with a dozen gun ports."`
 			`	You grimace but nod your understanding. "Thanks for the offer," you say.`
@@ -63,12 +63,12 @@ mission "Meet John"
 			`	He walks away, whistling a tune from an old Earth pirate movie.`
 				action
 					event "John Outfitter"
-			decline
+				decline
 			label reject
 			`	He looks crestfallen and walks away.`
 			`	(If you don't accept John's help, the John The Mechanic plugin won't do anything. Try reloading your save and landing again.)`
-			decline
+				decline
 			label flee
 			`	You jump into your ship and take off.`
 			`	(If you don't accept John's help, the John The Mechanic plugin won't do anything. Try reloading your save and landing again.)`
-			flee
+				flee
