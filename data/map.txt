@@ -1,3 +1,0 @@
-planet Lichen
-	add attributes john-the-mechanic
-
