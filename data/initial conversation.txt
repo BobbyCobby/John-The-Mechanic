@@ -1,1 +1,10 @@
-
+mission "Meet John"
+	landing
+	source
+		attributes "john-the-mechanic"
+	"offer precedence" 5
+	on offer
+		conversation
+			`Passing through the spaceport you see a sizable group of people waiting on a lottery draw. You hear a whoop of success, and your attention is drawn as one of them wins a moderate sum in a 12th division win. It's one or two days' worth of standard pay.`
+			`	It's difficult not to pity them as they immediately buy more tickets with the whole value.`
+				decline
