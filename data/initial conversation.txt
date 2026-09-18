@@ -23,7 +23,7 @@ mission "Meet John"
 			`	"I'm John Shacklebeard." Seeing your expression, he adds, "Yep, an old pirate family. But I've come over to the right side, if you will."`
 			choice
 				`	"What happened?"`
-				`	"Fine, just tell me what you can do for me."
+				`	"Fine, just tell me what you can do for me."`
 				goto brief
 				`	"I want nothing to do with you."`
 				goto reject
