@@ -1,0 +1,2 @@
+outfitter "John Outfits"
+	stock

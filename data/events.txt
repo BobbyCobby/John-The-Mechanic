@@ -1,0 +1,3 @@
+event "John Outfitter"
+	planet "Lichen"
+		add outfitter "John Outfits"
