@@ -1,10 +1,72 @@
 mission "Meet John"
 	landing
-	source
-		attributes "john-the-mechanic"
-	"offer precedence" 5
+	priority
+	source "Lichen"
 	on offer
 		conversation
-			`Passing through the spaceport you see a sizable group of people waiting on a lottery draw. You hear a whoop of success, and your attention is drawn as one of them wins a moderate sum in a 12th division win. It's one or two days' worth of standard pay.`
-			`	It's difficult not to pity them as they immediately buy more tickets with the whole value.`
-				decline
+			`Passing through the spaceport you meet a shabby-looking man covered in grease and oil. He looks friendly, though.`
+			`	He sees you and walks over. "Well, Captain <last>! It's a pleasure to meet you. Beautiful <model> you've got there," he adds.`
+			choice
+				`	"Nice to meet you too."`
+				goto greeting
+				`	"Who are you?"`
+				goto greeting
+				`	"How do you know my name?"`
+			branch famous
+				"combat rating" > 3000
+			`	He laughs. "It's on your name tag."`
+			goto greeting
+			label famous
+			`	He laughs. "Who hasn't heard of the famous <first> <last>, hero of the galaxy?" You give a reluctant smile.`
+			goto greeting
+			label greeting
+			`	"I'm John Shacklebeard." Seeing your expression, he adds, "Yep, an old pirate family. But I've come over to the right side, if you will."`
+			choice
+				`	"What happened?"`
+				`	"Fine, just tell me what you can do for me."
+				goto brief
+				`	"I want nothing to do with you."`
+				goto reject
+				`	"Pirates on a Republic planet? Get me outta here!"`
+				goto flee
+			`	He sighs. "Long story. I was born on Greenrock, and raised to be a pirate. You know," he says. "Smugglers coming 'round for dinner, a wanted criminal looking for passage every other day. I can tell you it's not for the faint-hearted, and I was only a repairman."`
+			`	"But I didn't really have a choice. My dad was a famous Bastion pilot. Ever heard of the Blackbeard's Spite?"`
+			choice
+				`	"Yes."`
+				`	"No."`
+			`	"Well, that was his ship," he says. "He'd take me out on raids and strap me to the front of the bridge, so I couldn't hide in the cargo hold. Eventually he put me in command of a Fury, and the first chance I got I ran away. About two minutes later I ran into a bounty hunter, and the scram drive button was jammed," he laughs in spite of himself.`
+			`	"I broke the pirate code and asked for mercy; this guy had seven interceptors. He was kind; he heard me out, and he dropped me here under a vow of peace."
+			choice
+				`	"Then what happened?"
+				`	"Can you wrap this up? I'm not here for stories."`
+				goto brief
+			`	"Well, I couldn't exactly just get a job," he laughs. Seeing your puzzled look, his smile fades. "Folk around here aren't all as open-minded as you are, <first>.`
+			`	"So, I turned to the only thing I know how to do, which is fixing ships. And modifying them, of course," he laughs. "I've been doing that ever since. I can improve the <ship> beyond recognition, if you like," he offers.`
+			goto abilities
+			label brief
+			`	He looks offended, but only slightly. Apparently you're not the only captain with a tight schedule.`
+			`	"Long story short, I'm a mechanic," he says. "I can modify your ship however you like."`
+			label abilities
+			choice
+				`	"Cool, what can you do?"`
+				`	"No thanks."
+				goto reject
+			`	He grins. "Anything and everything. Extra gun port? More armor? Cargo bay dangling precariously over the hyperdrive? John's your man."`
+			choice
+				`	"That's exactly what I need, thanks a million."`
+				goto end
+				`	"Is that... safe?"`
+			`	"It's perfectly legal, and as long as you aren't an idiot, you won't do any real harm. But I can't promise anything," he warns you. "There's a reason most Sparrows don't come with a dozen gun ports."`
+			`	You grimace but nod your understanding. "Thanks for the offer," you say.`
+			label end
+			`	"No problem!" he cries. "See you around. I rent a space in the outfitter; stop by later if you're still interested."`
+			`	He walks away, whistling a tune from an old Earth pirate movie.`
+			decline
+			label reject
+			`	He looks crestfallen and walks away.`
+			`	(If you don't accept John's help, the John The Mechanic plugin won't do anything. Try reloading your save and landing again.)`
+			decline
+			label flee
+			`	You jump into your ship and take off.`
+			`	(If you don't accept John's help, the John The Mechanic plugin won't do anything. Try reloading your save and landing again.)`
+			flee
