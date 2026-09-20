@@ -40,7 +40,7 @@ mission "Meet John"
 				`	"Then what happened?"`
 				`	"Can you wrap this up? I'm not here for stories."`
 					goto brief
-			`	"Well, I couldn't exactly just get a job," he laughs. Seeing your puzzled look, his smile fades. "Folk around here aren't all as open-minded as you are, <first>.`
+			`	"Well, I couldn't exactly just get a job," he laughs. Seeing your puzzled look, his smile fades. "Folks around here aren't all as open-minded as you are, <first>.`
 			`	"So, I turned to the only thing I know how to do, which is fixing ships. And modifying them, of course," he laughs. "I've been doing that ever since. I can improve the <ship> beyond recognition, if you like," he offers.`
 			goto abilities
 			label brief
