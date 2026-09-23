@@ -1,4 +1,4 @@
-outfit Armor
+outfit "Armor"
 	category Systems
 	cost 20000
 	"mass" 15
