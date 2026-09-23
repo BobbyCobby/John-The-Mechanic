@@ -1,0 +1,8 @@
+outfit Armor
+	category Systems
+	cost 20000
+	"mass" 15
+	"hull" 350
+	"heat dissipation" -0.03
+	description "This metal plating, bolted onto the sides of your ship, will increase your hull strength. But it can quickly smother your ship until it overheats."
+
